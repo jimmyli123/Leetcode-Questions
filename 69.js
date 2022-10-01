@@ -13,6 +13,17 @@ var mySqrt = function(x) {
     return lastVal;
 };
 
+// My favorite answer
+var mySqrt = function(x) {
+    let i = 0;
+    let answer = 0;
+    while (i*i <= x) {
+        answer = i;
+        i++;
+    }
+    return answer;
+};
+
 // Binary-Search O(Log(n))
 
 var mySqrt = function(x) {
