@@ -15,3 +15,14 @@ var twoSum = function(nums, target) {
     }
     return answer;
 };
+
+// My ingenius solution
+var twoSum = function(nums, target) {
+    for (let i =0; i<nums.length; i++) {
+        let difference = target-nums[i]
+        let indexOfDif = nums.indexOf(difference,i+1)
+        if (indexOfDif != -1) {
+            return [i, indexOfDif]
+        }
+    }
+};
