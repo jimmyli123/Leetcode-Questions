@@ -1,7 +1,7 @@
 // 21. Merge Two Sorted Lists
 
 var mergeTwoLists = function(list1, list2) {
-    let answerNode = new ListNode(0)
+    let answerNode = new ListNode()
     let tempNode = answerNode
     
     while (list1 && list2) {
