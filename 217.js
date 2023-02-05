@@ -23,3 +23,24 @@ var containsDuplicate = function(nums) {
     }
     return answer;
 };
+
+// Using an object to store each element in nums as a key and property is how many times it appears.
+var containsDuplicate = function(nums) {
+    let container = {}
+    for (let i =0; i<nums.length; i++) {
+        if (container[nums[i]]) {
+          container[nums[i]] += 1
+        }
+        else {
+            container[nums[i]] = 1
+        }
+    }
+    console.log(`Container: ${container}`)
+    for (const element in container) {
+        if (container[element] >= 2) {
+            return true;
+        }
+        
+    }
+    return false;
+};
