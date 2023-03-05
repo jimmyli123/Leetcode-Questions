@@ -25,6 +25,7 @@ var containsDuplicate = function(nums) {
 };
 
 // Using an object to store each element in nums as a key and property is how many times it appears.
+// Big O is O(n)
 var containsDuplicate = function(nums) {
     let container = {}
     for (let i =0; i<nums.length; i++) {
