@@ -16,11 +16,14 @@ var mySqrt = function(x) {
 // My brute force method
 
 var mySqrt = function(x) {
-    if (x <=1 ) { return x}
+    let answer = 0;
     for (let i =1; i<=x; i++) {
-        if (i*i === x) { return i}
-        if (i*i > x) { return i-1}
+        if (i*i <= x) {
+            answer = i;
+        }
+        if (i*i > x) { return answer; }
     }
+    return answer; 
 };
 
 // My favorite answer
