@@ -36,3 +36,14 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+// Amateur answer
+var twoSum = function(nums, target) {
+    for (let i =0; i<nums.length; i++) {
+        let dif = target-nums[i]
+        if (nums.indexOf(dif) != -1 && nums.indexOf(dif) != i) {
+            return [i,nums.indexOf(dif)]
+        }
+    }
+    return false
+};
